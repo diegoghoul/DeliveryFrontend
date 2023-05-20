@@ -41,14 +41,20 @@ class Card extends HTMLElement {
     
     .card {
         width: 300px;
-        border: 1px solid #ccc;
+  
         border-radius: 4px;
         padding: 10px;
         text-align: center;
-        cursor: pointer; /* Cursor cambia a una mano al pasar por encima */
+        cursor: pointer; 
+        background-color:#fff;
+        box-shadow: 5px 3px 10px #989898;
+        transition: all 0.3s;
       }
-  
+    .card:hover{
+      background-color:#cfbcdf;
+    }
       .card-image {
+        border-radius: 4px;
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;

@@ -14,27 +14,30 @@ class Navbar extends HTMLElement {
 
   render() {
     const template = html`
-    <style>.navbar {
+    <style>
+    .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #f2f2f2;
+      background-color: #8e79ba;
       padding: 10px;
     }
     
     .navbar-title {
       font-weight: bold;
       font-size: 20px;
+      color: white;
     }
     
     .navbar-links {
       display: flex;
       gap: 10px;
+      
     }
     
     .navbar-link {
       text-decoration: none;
-      color: #333333;
+      color: #ffffff;
     }
     
     </style>
