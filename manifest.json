@@ -1,0 +1,17 @@
+{
+    "name": "DELIVERY APP",
+    "short_name": "DELIVERY",
+    "description": "Aplicacion de entrega a domicilio",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#303030",
+    "orientation": "portrait-primary",
+    "icons": [
+       
+          {
+            "src": "/src/assets/icono.png",
+            "type": "image/png", "sizes": "512x512"
+          }
+    ]
+}
