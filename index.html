@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliverry App</title>
     <script src="index.js" type="module"></script>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 20px;
+          justify-items: center;
+          padding: 2rem;
+        }
+      </style>
 </head>
+
 <body>
     <navbar-component></navbar-component>
+
+    <div class="grid-container">
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+        <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="https://github.com/diegoghoul/DeliveryFrontend"></card-component>
+    </div>
 </body>
+
 </html>
