@@ -1,6 +1,6 @@
 import { html, render } from '../lib/lit-html.js';
 
-class Card extends HTMLElement {
+export class Card extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -81,3 +81,4 @@ class Card extends HTMLElement {
 }
 
 customElements.define('card-component', Card);
+export default Card;
