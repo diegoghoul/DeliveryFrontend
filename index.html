@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="manifest" href="manifest.json">
+    
     <script>if ('serviceWorker' in navigator) {
         // Verificar si el Service Worker ya está registrado
         if (navigator.serviceWorker.controller) {
@@ -29,18 +30,12 @@
 </head>
 <body>
         <nav-bar></nav-bar>
-        <div class="grid-container">
-            <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="comercios.html"></card-component>
-            <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="comercios.html"></card-component>
-            <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="comercios.html"></card-component>
-            <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="comercios.html"></card-component>
-            <card-component image="https://clubdeltrade.com/wp-content/uploads/2019/01/Como_definir_o_mix_de_produtos_ideal.png" title="Abarrote" url="comercios.html"></card-component>
-
-     
+        <div class="grid-container" id="categorias-container">
+         
         </div>
 
    
-    
+        <script type="module" src="app.js"></script>
     <script type="module" src="./src/js/NavbarComponent.js"></script>
     <script type="module" src="./src/js/CardComponent.js"></script>
 </body>
