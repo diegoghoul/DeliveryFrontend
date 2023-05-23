@@ -4,8 +4,8 @@ class Navbar extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.data = '¡Hola, mundo!';
-    this.handleClick = this.handleClick.bind(this);
+ 
+  
   }
 
   connectedCallback() {
@@ -21,6 +21,8 @@ class Navbar extends HTMLElement {
       align-items: center;
       background-color: #8e79ba;
       padding: 10px;
+      height:40px;
+      border-radius: 0 0 8px 8px;
     }
     
     .navbar-title {
@@ -41,6 +43,7 @@ class Navbar extends HTMLElement {
     }
     
     </style>
+    
     <div class="navbar">
     <span class="navbar-title">DeliveryApp</span>
     <div class="navbar-links">
@@ -52,10 +55,7 @@ class Navbar extends HTMLElement {
     render(template, this.shadowRoot);
   }
 
-  handleClick() {
-    this.data = '¡Hiciste clic!';
-    this.render();
-  }
+  
 }
 
 customElements.define('nav-bar', Navbar);
