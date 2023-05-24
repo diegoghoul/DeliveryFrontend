@@ -234,5 +234,26 @@
                 "ordenList": []
             }
         ]
+    },
+    {
+        "activo": true,
+        "idComercio": 13,
+        "nombre": "Puma",
+        "productoComercioList": [],
+        "sucursalList": []
+    },
+    {
+        "activo": true,
+        "idComercio": 14,
+        "nombre": "Siman",
+        "productoComercioList": [],
+        "sucursalList": []
+    },
+    {
+        "activo": true,
+        "idComercio": 15,
+        "nombre": "Joyas estefany",
+        "productoComercioList": [],
+        "sucursalList": []
     }
 ]
