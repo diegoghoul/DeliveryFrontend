@@ -205,22 +205,76 @@
     {
         "activo": true,
         "comentarios": "Venta de muebles, tipo sillones y cosas",
-        "comercioTipoComercioList": [],
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 14,
+                    "nombre": "Siman",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
+                "comercioTipoComercioPK": {
+                    "idComercio": 14,
+                    "idTipoComercio": 3
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
         "idTipoComercio": 3,
         "nombre": "Muebles",
         "tipoComercioList": []
     },
     {
         "activo": true,
-        "comentarios": "\nUn restaurante es un establecimiento comercial dedicado a la preparación y servicio de comida y bebida para ser consumidos en el lugar. Los restaurantes ofrecen una variedad de opciones gastronómicas que pueden incluir platos de diferentes estilos culinarios, como cocina local, regional, nacional e internacional.",
-        "comercioTipoComercioList": [],
+        "comentarios": "Son cosas de gasolines",
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 13,
+                    "nombre": "Puma",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
+                "comercioTipoComercioPK": {
+                    "idComercio": 13,
+                    "idTipoComercio": 7
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
+        "idTipoComercio": 7,
+        "nombre": "Gasolinera",
+        "tipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 3,
+                    "nombre": "Pizza Hut",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
+                "comercioTipoComercioPK": {
+                    "idComercio": 3,
+                    "idTipoComercio": 4
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
         "idTipoComercio": 4,
         "nombre": "Restaurantes",
         "tipoComercioList": []
     },
     {
         "activo": true,
-        "comentarios": "Un café es un establecimiento que se especializa en la preparación y servicio de café, así como de otras bebidas calientes y frías. Los cafés suelen ser lugares acogedores y populares donde las personas se reúnen para socializar, relajarse o trabajar mientras disfrutan de una taza de café.",
         "comercioTipoComercioList": [
             {
                 "activo": true,
@@ -344,18 +398,25 @@
     },
     {
         "activo": true,
-        "comentarios": "\nUna joyería es un establecimiento especializado en la venta y exhibición de joyas, que incluyen una amplia variedad de piezas preciosas y accesorios relacionados. Las joyerías ofrecen una selección de joyas que van desde anillos, pulseras y collares, hasta pendientes, broches y relojes.",
-        "comercioTipoComercioList": [],
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 15,
+                    "nombre": "Joyas estefany",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
+                "comercioTipoComercioPK": {
+                    "idComercio": 15,
+                    "idTipoComercio": 6
+                },
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]"
+            }
+        ],
         "idTipoComercio": 6,
         "nombre": "Joyería",
-        "tipoComercioList": []
-    },
-    {
-        "activo": true,
-        "comentarios": "Son cosas de gasolines",
-        "comercioTipoComercioList": [],
-        "idTipoComercio": 7,
-        "nombre": "Gasolinera",
         "tipoComercioList": []
     }
 ]
