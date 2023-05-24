@@ -1,20 +1,25 @@
 [
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 1,
-                    "idTipoComercio": 2
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Burger King es una cadena de restaurantes de comida rápida reconocida a nivel mundial. Es conocida por su amplia variedad de hamburguesas, incluyendo la famosa \"Whopper\". Además de hamburguesas, también ofrecen sándwiches de pollo, opciones vegetarianas, papas fritas y una selección de postres.",
         "idComercio": 1,
         "nombre": "Burger King",
-        "productoComercioList": [],
+        "productoComercioList": [
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "descripcion": "Trae mas queso",
+                    "idProducto": 3,
+                    "nombre": "Hamburguesa Extra queso"
+                },
+                "productoComercioPK": {
+                    "idComercio": 1,
+                    "idProducto": 3
+                }
+            }
+        ],
         "sucursalList": [
             {
                 "idDireccion": 121212312312,
@@ -26,35 +31,6 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 2,
-                    "idTipoComercio": 2
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": " McDonald's es una de las cadenas de comida rápida más grandes y reconocidas en todo el mundo. Son famosos por sus hamburguesas de estilo clásico, como la \"Big Mac\" y la \"Quarter Pounder\", así como por sus papas fritas y McNuggets de pollo. McDonald's también ofrece opciones de desayuno, ensaladas, postres y bebidas.",
-        "idComercio": 2,
-        "nombre": "McDonald's",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 3,
-                    "idTipoComercio": 2
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Pizza Hut es una cadena de restaurantes especializada en pizzas. Ofrecen una variedad de pizzas con diferentes coberturas y estilos de masa, así como opciones de pasta, alitas de pollo, pan de ajo y ensaladas. También cuentan con servicio de entrega a domicilio en muchos lugares.",
         "idComercio": 3,
         "nombre": "Pizza Hut",
         "productoComercioList": [],
@@ -62,17 +38,6 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 4,
-                    "idTipoComercio": 2
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Taco Bell es una cadena de comida rápida que se centra en la comida mexicana de estilo tex-mex. Sus platos incluyen tacos, burritos, quesadillas y nachos, con una variedad de rellenos y salsas para elegir. Taco Bell es conocido por su menú creativo y sabores audaces.",
         "idComercio": 4,
         "nombre": "Taco Bell",
         "productoComercioList": [],
@@ -80,71 +45,70 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 5,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Walmart es una cadena de supermercados que ofrece una amplia variedad de productos de abarrotes, incluyendo alimentos, productos de limpieza, artículos para el hogar y más.",
         "idComercio": 5,
         "nombre": "Walmart",
-        "productoComercioList": [],
+        "productoComercioList": [
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 9,
+                    "nombre": "Arroz"
+                },
+                "productoComercioPK": {
+                    "idComercio": 5,
+                    "idProducto": 9
+                }
+            },
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 10,
+                    "nombre": "Salsa de tomate"
+                },
+                "productoComercioPK": {
+                    "idComercio": 5,
+                    "idProducto": 10
+                }
+            },
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 11,
+                    "nombre": "Legumbres"
+                },
+                "productoComercioPK": {
+                    "idComercio": 5,
+                    "idProducto": 11
+                }
+            },
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 12,
+                    "nombre": "Pasta"
+                },
+                "productoComercioPK": {
+                    "idComercio": 5,
+                    "idProducto": 12
+                }
+            }
+        ],
         "sucursalList": []
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 6,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Soriana es una cadena de supermercados que cuenta con secciones de abarrotes donde se pueden encontrar alimentos, productos básicos y diversos productos de consumo diario.",
-        "idComercio": 6,
-        "nombre": "Soriana",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 7,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "OXXO es una cadena de tiendas de conveniencia que ofrece una selección de productos de abarrotes, snacks, bebidas, productos lácteos y otros artículos de consumo diario.",
-        "idComercio": 7,
-        "nombre": "OXXO",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 8,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Superama es una cadena de supermercados enfocada en productos de calidad, donde se pueden encontrar abarrotes, productos frescos, alimentos gourmet y una variedad de productos especiales.",
         "idComercio": 8,
         "nombre": "Superama",
         "productoComercioList": [],
@@ -152,35 +116,6 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 9,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Bodega Aurrera es una cadena de supermercados que se especializa en ofrecer productos a precios accesibles, incluyendo una amplia selección de abarrotes y productos básicos",
-        "idComercio": 9,
-        "nombre": "Bodega Aurrera",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 10,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Chedraui es una cadena de supermercados que ofrece una variedad de productos de abarrotes, productos frescos, carnes, lácteos y otros artículos de consumo diario.",
         "idComercio": 10,
         "nombre": "Chedraui",
         "productoComercioList": [],
@@ -188,17 +123,6 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 11,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "La Comer es una cadena de supermercados que se enfoca en ofrecer una amplia gama de productos, incluyendo abarrotes, productos frescos, pescados, mariscos y otros productos de calidad.",
         "idComercio": 11,
         "nombre": "La Comer",
         "productoComercioList": [],
@@ -206,92 +130,109 @@
     },
     {
         "activo": true,
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 12,
-                    "idTipoComercio": 5
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Starbucks es una cadena global de cafeterías conocida por su amplia selección de bebidas a base de café, como lattes, cappuccinos, espressos, Frappuccinos y más. También ofrecen una variedad de alimentos y productos relacionados con el café.",
         "idComercio": 12,
         "nombre": "Starbucks",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
+        "productoComercioList": [
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 13,
-                    "idTipoComercio": 5
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "descripcion": "Un cafe americano",
+                    "idProducto": 1,
+                    "nombre": "Cafe Americano"
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Gloria Jean's Coffees es una cadena de cafeterías australiana que se ha expandido a nivel internacional. Ofrecen una variedad de bebidas de café, tés y batidos, así como opciones de alimentos y pasteles.",
-        "idComercio": 13,
-        "nombre": "Gloria Jean's Coffees",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 1
+                }
+            },
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 14,
-                    "idTipoComercio": 5
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "descripcion": "Un simple cafe helado",
+                    "idProducto": 2,
+                    "nombre": "Cafe Helado"
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Costa Coffee es una cadena de cafeterías británica que se ha expandido a nivel internacional. Ofrece una variedad de bebidas de café, tés, chocolate caliente y una selección de alimentos y dulces.",
-        "idComercio": 14,
-        "nombre": "Costa Coffee",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 2
+                }
+            },
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 15,
-                    "idTipoComercio": 4
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 8,
+                    "nombre": "Café con leche"
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
-        "descripcion": "Olive Garden es una cadena de restaurantes de comida italiana que ofrece una variedad de platos clásicos italianos, como pastas, pizzas, ensaladas y postres.",
-        "idComercio": 15,
-        "nombre": "Olive Garden",
-        "productoComercioList": [],
-        "sucursalList": []
-    },
-    {
-        "activo": true,
-        "comercioTipoComercioList": [
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 8
+                }
+            },
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 16,
-                    "idTipoComercio": 4
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 7,
+                    "nombre": "Cappuccino"
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 7
+                }
+            },
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 6,
+                    "nombre": "Café latte"
+                },
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 6
+                }
+            },
+            {
+                "activo": true,
+                "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                "menuComercioList": [],
+                "producto": {
+                    "activo": true,
+                    "idProducto": 4,
+                    "nombre": "Café expreso"
+                },
+                "productoComercioPK": {
+                    "idComercio": 12,
+                    "idProducto": 4
+                }
             }
         ],
-        "descripcion": "Red Lobster es una cadena de restaurantes especializada en mariscos y pescados. Ofrecen una amplia selección de platos de mariscos frescos, como langosta, camarones, cangrejo y pescado.",
-        "idComercio": 16,
-        "nombre": "Red Lobster",
-        "productoComercioList": [],
-        "sucursalList": []
+        "sucursalList": [
+            {
+                "idDireccion": 12121,
+                "idSucursal": 3,
+                "nombre": "Sucursal Centro",
+                "ordenList": []
+            },
+            {
+                "idDireccion": 1212,
+                "idSucursal": 4,
+                "nombre": "Sucursal Metrocentro",
+                "ordenList": []
+            }
+        ]
     }
 ]

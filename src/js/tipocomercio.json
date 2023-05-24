@@ -5,6 +5,70 @@
         "comercioTipoComercioList": [
             {
                 "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 5,
+                    "nombre": "Walmart",
+                    "productoComercioList": [
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 9,
+                                "nombre": "Arroz"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 5,
+                                "idProducto": 9
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 10,
+                                "nombre": "Salsa de tomate"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 5,
+                                "idProducto": 10
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 11,
+                                "nombre": "Legumbres"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 5,
+                                "idProducto": 11
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 12,
+                                "nombre": "Pasta"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 5,
+                                "idProducto": 12
+                            }
+                        }
+                    ],
+                    "sucursalList": []
+                },
                 "comercioTipoComercioPK": {
                     "idComercio": 5,
                     "idTipoComercio": 1
@@ -13,22 +77,13 @@
             },
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 6,
-                    "idTipoComercio": 1
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 8,
+                    "nombre": "Superama",
+                    "productoComercioList": [],
+                    "sucursalList": []
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 7,
-                    "idTipoComercio": 1
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
                 "comercioTipoComercioPK": {
                     "idComercio": 8,
                     "idTipoComercio": 1
@@ -37,14 +92,13 @@
             },
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 9,
-                    "idTipoComercio": 1
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 10,
+                    "nombre": "Chedraui",
+                    "productoComercioList": [],
+                    "sucursalList": []
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
                 "comercioTipoComercioPK": {
                     "idComercio": 10,
                     "idTipoComercio": 1
@@ -53,6 +107,13 @@
             },
             {
                 "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 11,
+                    "nombre": "La Comer",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
                 "comercioTipoComercioPK": {
                     "idComercio": 11,
                     "idTipoComercio": 1
@@ -62,7 +123,7 @@
         ],
         "idTipoComercio": 1,
         "nombre": "Abarrotes",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
@@ -70,14 +131,36 @@
         "comercioTipoComercioList": [
             {
                 "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 2,
-                    "idTipoComercio": 2
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 1,
+                    "nombre": "Burger King",
+                    "productoComercioList": [
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "descripcion": "Trae mas queso",
+                                "idProducto": 3,
+                                "nombre": "Hamburguesa Extra queso"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 1,
+                                "idProducto": 3
+                            }
+                        }
+                    ],
+                    "sucursalList": [
+                        {
+                            "idDireccion": 121212312312,
+                            "idSucursal": 1,
+                            "nombre": "Sucursal Metrocentro",
+                            "ordenList": []
+                        }
+                    ]
                 },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
                 "comercioTipoComercioPK": {
                     "idComercio": 1,
                     "idTipoComercio": 2
@@ -86,6 +169,13 @@
             },
             {
                 "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 3,
+                    "nombre": "Pizza Hut",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
                 "comercioTipoComercioPK": {
                     "idComercio": 3,
                     "idTipoComercio": 2
@@ -94,6 +184,13 @@
             },
             {
                 "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 4,
+                    "nombre": "Taco Bell",
+                    "productoComercioList": [],
+                    "sucursalList": []
+                },
                 "comercioTipoComercioPK": {
                     "idComercio": 4,
                     "idTipoComercio": 2
@@ -103,7 +200,7 @@
         ],
         "idTipoComercio": 2,
         "nombre": "Comida Rapida",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
@@ -111,32 +208,15 @@
         "comercioTipoComercioList": [],
         "idTipoComercio": 3,
         "nombre": "Muebles",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
         "comentarios": "\nUn restaurante es un establecimiento comercial dedicado a la preparación y servicio de comida y bebida para ser consumidos en el lugar. Los restaurantes ofrecen una variedad de opciones gastronómicas que pueden incluir platos de diferentes estilos culinarios, como cocina local, regional, nacional e internacional.",
-        "comercioTipoComercioList": [
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 15,
-                    "idTipoComercio": 4
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 16,
-                    "idTipoComercio": 4
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            }
-        ],
+        "comercioTipoComercioList": [],
         "idTipoComercio": 4,
         "nombre": "Restaurantes",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
@@ -144,24 +224,115 @@
         "comercioTipoComercioList": [
             {
                 "activo": true,
+                "comercio": {
+                    "activo": true,
+                    "idComercio": 12,
+                    "nombre": "Starbucks",
+                    "productoComercioList": [
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "descripcion": "Un cafe americano",
+                                "idProducto": 1,
+                                "nombre": "Cafe Americano"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 1
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "descripcion": "Un simple cafe helado",
+                                "idProducto": 2,
+                                "nombre": "Cafe Helado"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 2
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 8,
+                                "nombre": "Café con leche"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 8
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 7,
+                                "nombre": "Cappuccino"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 7
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 6,
+                                "nombre": "Café latte"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 6
+                            }
+                        },
+                        {
+                            "activo": true,
+                            "fechaCreacion": "2023-05-24T06:00:00Z[UTC]",
+                            "menuComercioList": [],
+                            "producto": {
+                                "activo": true,
+                                "idProducto": 4,
+                                "nombre": "Café expreso"
+                            },
+                            "productoComercioPK": {
+                                "idComercio": 12,
+                                "idProducto": 4
+                            }
+                        }
+                    ],
+                    "sucursalList": [
+                        {
+                            "idDireccion": 12121,
+                            "idSucursal": 3,
+                            "nombre": "Sucursal Centro",
+                            "ordenList": []
+                        },
+                        {
+                            "idDireccion": 1212,
+                            "idSucursal": 4,
+                            "nombre": "Sucursal Metrocentro",
+                            "ordenList": []
+                        }
+                    ]
+                },
                 "comercioTipoComercioPK": {
                     "idComercio": 12,
-                    "idTipoComercio": 5
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 13,
-                    "idTipoComercio": 5
-                },
-                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
-            },
-            {
-                "activo": true,
-                "comercioTipoComercioPK": {
-                    "idComercio": 14,
                     "idTipoComercio": 5
                 },
                 "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
@@ -169,7 +340,7 @@
         ],
         "idTipoComercio": 5,
         "nombre": "Café",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
@@ -177,7 +348,7 @@
         "comercioTipoComercioList": [],
         "idTipoComercio": 6,
         "nombre": "Joyería",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     },
     {
         "activo": true,
@@ -185,6 +356,6 @@
         "comercioTipoComercioList": [],
         "idTipoComercio": 7,
         "nombre": "Gasolinera",
-        "tipoProductoTipoComercioList": []
+        "tipoComercioList": []
     }
 ]

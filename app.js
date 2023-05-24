@@ -56,7 +56,7 @@ async function cargarJSON(url) {
       throw new Error("Error al cargar el archivo JSON");
     }
     const jsonData = await response.json();
-    return jsonData.sort(((a, b) => b.comercioTipoComercioList.length - a.comercioTipoComercioList.length));
+    return jsonData;
   } catch (error) {
     console.log(error);
   }
@@ -289,7 +289,8 @@ function handlePageChange(page) {
 }
 
 // categorias = await getdata();
-categorias = await cargarJSON("/src/js/tipocomercio.json");
+categorias = await cargarJSON("http://localhost:8080/ParcialTPI/tipocomercio");
 comercios = await cargarJSON("/src/js/comercio.json");
+
 
 renderCategorias(categorias, estado.nombreCategoria);
