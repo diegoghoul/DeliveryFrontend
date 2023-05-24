@@ -6,31 +6,11 @@ export class Card extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.image="";
     this.title="";
-    this.url="";
+    this.id="";
 
     this.handleClick = this.handleClick.bind(this);
   }
-  static get observedAttributes() {
-    return ['image', 'title','url'];
-  }
-  
-  attributeChangedCallback(nameAtr, oldValue, newValue) {
-    if (oldValue === newValue) {
-        return; // No hagas nada si el valor no ha cambiado
-      }
-    switch (nameAtr) {
-      case "image":
-        this.image = newValue;
-        break;
 
-      case "title":
-        this.title = newValue;
-        break;
-      case "url":
-        this.url = newValue;
-        break;
-    }
-}
   connectedCallback() {
     this.render();
   }
@@ -70,7 +50,7 @@ export class Card extends HTMLElement {
       }
     
     </style>
-    <div class="card" @click="${this.handleClick}">
+    <div id="${this.id}" class="card" @click="${this.handleClick}">
         <img class="card-image" src="${this.image}" alt="Card Image" />
         <div class="card-title">${this.title}</div>
       </div>
