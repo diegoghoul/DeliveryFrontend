@@ -1,0 +1,190 @@
+[
+    {
+        "activo": true,
+        "comentarios": "Son tiendas de venta, de cosas de  la canasta basica",
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 5,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 6,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 7,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 8,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 9,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 10,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 11,
+                    "idTipoComercio": 1
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
+        "idTipoComercio": 1,
+        "nombre": "Abarrotes",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "venta de comida rapida, tipo hamburguesa y cosas asi",
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 2,
+                    "idTipoComercio": 2
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 1,
+                    "idTipoComercio": 2
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 3,
+                    "idTipoComercio": 2
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 4,
+                    "idTipoComercio": 2
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
+        "idTipoComercio": 2,
+        "nombre": "Comida Rapida",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "Venta de muebles, tipo sillones y cosas",
+        "comercioTipoComercioList": [],
+        "idTipoComercio": 3,
+        "nombre": "Muebles",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "\nUn restaurante es un establecimiento comercial dedicado a la preparación y servicio de comida y bebida para ser consumidos en el lugar. Los restaurantes ofrecen una variedad de opciones gastronómicas que pueden incluir platos de diferentes estilos culinarios, como cocina local, regional, nacional e internacional.",
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 15,
+                    "idTipoComercio": 4
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 16,
+                    "idTipoComercio": 4
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
+        "idTipoComercio": 4,
+        "nombre": "Restaurantes",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "Un café es un establecimiento que se especializa en la preparación y servicio de café, así como de otras bebidas calientes y frías. Los cafés suelen ser lugares acogedores y populares donde las personas se reúnen para socializar, relajarse o trabajar mientras disfrutan de una taza de café.",
+        "comercioTipoComercioList": [
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 12,
+                    "idTipoComercio": 5
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 13,
+                    "idTipoComercio": 5
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            },
+            {
+                "activo": true,
+                "comercioTipoComercioPK": {
+                    "idComercio": 14,
+                    "idTipoComercio": 5
+                },
+                "fechaCreacion": "2023-05-23T06:00:00Z[UTC]"
+            }
+        ],
+        "idTipoComercio": 5,
+        "nombre": "Café",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "\nUna joyería es un establecimiento especializado en la venta y exhibición de joyas, que incluyen una amplia variedad de piezas preciosas y accesorios relacionados. Las joyerías ofrecen una selección de joyas que van desde anillos, pulseras y collares, hasta pendientes, broches y relojes.",
+        "comercioTipoComercioList": [],
+        "idTipoComercio": 6,
+        "nombre": "Joyería",
+        "tipoProductoTipoComercioList": []
+    },
+    {
+        "activo": true,
+        "comentarios": "Son cosas de gasolines",
+        "comercioTipoComercioList": [],
+        "idTipoComercio": 7,
+        "nombre": "Gasolinera",
+        "tipoProductoTipoComercioList": []
+    }
+]

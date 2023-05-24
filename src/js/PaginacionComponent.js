@@ -76,7 +76,7 @@ export class Paginacion extends HTMLElement {
         <button
           class="anterior-btn"
           @click="${this.handlePrevious}"
-          ?disabled="${this.currentPage === 1}"
+          ?disabled="${this.currentPage === 1 }"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

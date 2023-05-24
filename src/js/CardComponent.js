@@ -10,10 +10,31 @@ export class Card extends HTMLElement {
 
     this.handleClick = this.handleClick.bind(this);
   }
+  static get observedAttributes() {
+    return ['image', 'title','id'];
+  }
+  
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    if (oldValue === newValue) {
+        return; // No hagas nada si el valor no ha cambiado
+      }
+    switch (nameAtr) {
+      case "image":
+        this.image = newValue;
+        break;
 
+      case "title":
+        this.title = newValue;
+        break;
+      case "id":
+        this.id = newValue;
+        break;
+    }
+}
   connectedCallback() {
     this.render();
   }
+
 
   render() {
     const template = html`
@@ -59,7 +80,7 @@ export class Card extends HTMLElement {
   }
 
   handleClick() {
-    window.location.href = this.url;
+  
   }
 }
 
