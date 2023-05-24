@@ -56,7 +56,7 @@ async function cargarJSON(url) {
       throw new Error("Error al cargar el archivo JSON");
     }
     const jsonData = await response.json();
-    return jsonData.sort(((a, b) => b.comercioTipoComercioList.length - a.comercioTipoComercioList.length));;
+    return jsonData.sort(((a, b) => b.comercioTipoComercioList.length - a.comercioTipoComercioList.length));
   } catch (error) {
     console.log(error);
   }
@@ -89,7 +89,7 @@ function renderCategorias(categorias, id) {
   if (id == "todas") {
     //Si se quieren renderizar todas
     titulo.innerHTML = "Todas las categorias";
-    cardsToRender = categorias;
+    cardsToRender = categorias.sort((a, b) => a.nombre.localeCompare(b.nombre));
     cardsToRender.forEach((categoriaCard) => {
       const card = new Card();
       card.setAttribute(
@@ -99,6 +99,7 @@ function renderCategorias(categorias, id) {
       card.setAttribute("title", categoriaCard.nombre);
       card.setAttribute("id", categoriaCard.idTipoComercio);
       card.addEventListener("click", (event) => {
+        currentPage=1
         renderComercios(
           categoriaCard.nombre,
           categoriaCard.idTipoComercio,
@@ -120,6 +121,7 @@ function renderCategorias(categorias, id) {
       card.setAttribute("title", categoriaCard.nombre);
       card.setAttribute("id", categoriaCard.idTipoComercio);
       card.addEventListener("click", (event) => {
+        currentPage=1
         renderComercios(
           categoriaCard.nombre,
           categoriaCard.idTipoComercio,
@@ -187,6 +189,7 @@ function renderComercios(nombreCategoria, idCategoria, page) {
       estado.view = "productos";
       estado.id = comercioCard.idComercio;
       estado.nombre = comercioCard.nombre;
+      currentPage=1
       renderProductos(
         comercioCard.nombre,
         comercioCard.idComercio,

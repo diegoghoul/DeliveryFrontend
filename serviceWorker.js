@@ -15,6 +15,7 @@ const addResourcesToCache = async (resources) => {
         "src/js/CardComponent.js",
         "src/js/NavbarComponent.js",
         "/index.html",
+        "/app.js",
       ])
     );
   });
