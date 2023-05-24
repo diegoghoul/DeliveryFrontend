@@ -19,7 +19,7 @@ class Navbar extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #8e79ba;
+      background-color: #DA5552;
       padding: 10px;
       height:40px;
       border-radius: 0 0 8px 8px;
@@ -40,6 +40,9 @@ class Navbar extends HTMLElement {
     .navbar-link {
       text-decoration: none;
       color: #ffffff;
+    }
+    .navbar-link:hover {
+      color: #E4B1AB;
     }
     
     </style>

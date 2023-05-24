@@ -41,7 +41,6 @@ export class Card extends HTMLElement {
     
     .card {
         width: 300px;
-  
         border-radius: 4px;
         padding: 10px;
         text-align: center;
@@ -51,19 +50,23 @@ export class Card extends HTMLElement {
         transition: all 0.3s;
       }
     .card:hover{
-      background-color:#cfbcdf;
+      background-color:#E4B1AB;
     }
+    
       .card-image {
         border-radius: 4px;
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
+        height: 200px; 
+        object-fit: cover; 
       }
   
       .card-title {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
+         color:#DA5552;
       }
     
     </style>

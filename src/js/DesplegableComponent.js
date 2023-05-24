@@ -1,10 +1,10 @@
 import { html, render } from '../lib/lit-html.js';
 
-export class Dropdown extends HTMLElement {
+export class Desplegable extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.items = ['Centro', 'Metrocentro', 'Las ramblas'];
+    this.items = [];
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -36,7 +36,7 @@ export class Dropdown extends HTMLElement {
           
         }
         .dropdown button {
-            background-color: #8e79ba;
+            background-color:#DA5552;
             border: none;
             border-radius: 8px;
             color: white;
@@ -71,7 +71,7 @@ export class Dropdown extends HTMLElement {
           transition: all 0.3s;
         }
         .dropdown-content a:hover {
-          background-color:#cfbcdf;
+          background-color:#E4B1AB;
         }
 
         .dropdown:hover .dropdown-content {
@@ -98,5 +98,5 @@ export class Dropdown extends HTMLElement {
   }
 }
 
-customElements.define('dropdown-component', Dropdown);
-export default Dropdown;
+customElements.define('desplegable-component', Desplegable);
+export default Desplegable;

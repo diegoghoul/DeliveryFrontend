@@ -1,6 +1,8 @@
 body{
   padding: 0;
   margin: 0;
+  background-color: rgb(247, 247, 247);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .grid-container {
   display: grid;
@@ -8,4 +10,9 @@ body{
   grid-gap: 50px;
   justify-items: center;
   padding: 2rem;
+}
+.main-title {
+  display: flex;
+  justify-content: center;
+ 
 }
