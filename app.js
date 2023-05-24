@@ -175,6 +175,7 @@ function renderComercios(nombreCategoria, idCategoria, page) {
       comerciosTotales.push(comercio);
     }
   });
+  comerciosTotales=comerciosTotales.sort((a, b) => a.nombre.localeCompare(b.nombre));
   //Manejar la paginacion
   const startIndex = (page - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
