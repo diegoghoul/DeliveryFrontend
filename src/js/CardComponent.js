@@ -6,12 +6,12 @@ export class Card extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.image="";
     this.title="";
-    this.url="";
+    this.id="";
 
     this.handleClick = this.handleClick.bind(this);
   }
   static get observedAttributes() {
-    return ['image', 'title','url'];
+    return ['image', 'title','id'];
   }
   
   attributeChangedCallback(nameAtr, oldValue, newValue) {
@@ -26,8 +26,8 @@ export class Card extends HTMLElement {
       case "title":
         this.title = newValue;
         break;
-      case "url":
-        this.url = newValue;
+      case "id":
+        this.id = newValue;
         break;
     }
 }
@@ -35,13 +35,13 @@ export class Card extends HTMLElement {
     this.render();
   }
 
+
   render() {
     const template = html`
     <style> 
     
     .card {
         width: 300px;
-  
         border-radius: 4px;
         padding: 10px;
         text-align: center;
@@ -51,23 +51,27 @@ export class Card extends HTMLElement {
         transition: all 0.3s;
       }
     .card:hover{
-      background-color:#cfbcdf;
+      background-color:#E4B1AB;
     }
+    
       .card-image {
         border-radius: 4px;
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
+        height: 200px; 
+        object-fit: cover; 
       }
   
       .card-title {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
+         color:#DA5552;
       }
     
     </style>
-    <div class="card" @click="${this.handleClick}">
+    <div id="${this.id}" class="card" @click="${this.handleClick}">
         <img class="card-image" src="${this.image}" alt="Card Image" />
         <div class="card-title">${this.title}</div>
       </div>
@@ -76,7 +80,7 @@ export class Card extends HTMLElement {
   }
 
   handleClick() {
-    window.location.href = this.url;
+  
   }
 }
 

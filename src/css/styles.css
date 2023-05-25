@@ -1,6 +1,8 @@
 body{
   padding: 0;
   margin: 0;
+  background-color: rgb(247, 247, 247);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .grid-container {
   display: grid;
@@ -8,4 +10,36 @@ body{
   grid-gap: 50px;
   justify-items: center;
   padding: 2rem;
+}
+.main-title {
+  display: flex;
+  justify-content: center;
+  margin:0px 0px;
+ 
+}
+.title-container button{
+    background-color:#fff;
+    border: none;
+    color:  #da5552;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+  
+}
+.title-container button svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  color: #da5552;
+}
+.title-container button svg path {
+ fill: #da5552;
+}
+.title-container button[disabled]{
+  cursor: not-allowed;
+ }
+.title-container button[disabled] svg path {
+ fill: #c7c7c7;
 }

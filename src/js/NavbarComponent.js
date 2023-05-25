@@ -4,8 +4,8 @@ class Navbar extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.data = '¡Hola, mundo!';
-    this.handleClick = this.handleClick.bind(this);
+ 
+  
   }
 
   connectedCallback() {
@@ -19,19 +19,23 @@ class Navbar extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #8e79ba;
+      background-color: #DA5552;
       padding: 10px;
+      height:40px;
+      border-radius: 0 0 8px 8px;
     }
     
     .navbar-title {
       font-weight: bold;
       font-size: 20px;
       color: white;
+      margin-left:20px;
     }
     
     .navbar-links {
       display: flex;
-      gap: 10px;
+      gap: 20px;
+      margin-right:20px;
       
     }
     
@@ -39,8 +43,12 @@ class Navbar extends HTMLElement {
       text-decoration: none;
       color: #ffffff;
     }
+    .navbar-link:hover {
+      color: #E4B1AB;
+    }
     
     </style>
+    
     <div class="navbar">
     <span class="navbar-title">DeliveryApp</span>
     <div class="navbar-links">
@@ -52,10 +60,7 @@ class Navbar extends HTMLElement {
     render(template, this.shadowRoot);
   }
 
-  handleClick() {
-    this.data = '¡Hiciste clic!';
-    this.render();
-  }
+  
 }
 
 customElements.define('nav-bar', Navbar);
