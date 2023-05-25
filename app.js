@@ -298,7 +298,7 @@ function handlePageChange(page) {
 }
 
 // categorias = await getdata();
-categorias = await cargarJSON("/src/js/tipocomercio.json");
+categorias = await cargarJSON("http://localhost:8080/ParcialTPI/tipocomercio");
 
 
 
