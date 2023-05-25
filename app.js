@@ -27,7 +27,7 @@ var categoriasImgs = [
   "https://equipment21.com/wp-content/uploads/lista-de-productos-para-abarrotes.jpg",
   "https://www.vivamisalud.com/wp-content/uploads/2018/08/comidarapida_web2.jpg",
   "https://m.media-amazon.com/images/I/711P8bnZSTL._AC_UF894,1000_QL80_.jpg",
-  "https://media.admagazine.com/photos/618a5d11532cae908aaf27ab/master/w_1600%2Cc_limit/96644.jpg",
+  "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_640,q_75,w_640,x_989,y_730/v1/clients/orlandofl/185683_entrees_667152ec-7340-4428-91e7-72265329d7d0.jpg",
   "https://www.america-retail.com/static//2021/04/cafeteria900-e1623425806925.jpeg",
   "https://s2.abcstatics.com/media/estilo/2021/05/07/apertura-joyas-small-ku5B--1248x698@abc.jpg",
   "https://globalestacionesdeservicio.com/wp-content/uploads/2015/10/gasolineras.jpg",

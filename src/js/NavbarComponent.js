@@ -29,11 +29,13 @@ class Navbar extends HTMLElement {
       font-weight: bold;
       font-size: 20px;
       color: white;
+      margin-left:20px;
     }
     
     .navbar-links {
       display: flex;
-      gap: 10px;
+      gap: 20px;
+      margin-right:20px;
       
     }
     

@@ -14,6 +14,7 @@ body{
 .main-title {
   display: flex;
   justify-content: center;
+  margin:0px 0px;
  
 }
 .title-container button{
