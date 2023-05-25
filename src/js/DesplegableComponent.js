@@ -84,7 +84,7 @@ export class Desplegable extends HTMLElement {
         <path d="M19 9l-7 7-7-7"></path>
       </svg></button>
         <div class="dropdown-content">
-          ${this.items.map((item) => html`<a href='https://goo.gl/maps/pqJNUSHZLvjx8U6Q9'>${item}</a>`)}
+          ${this.items.map((item) => html`<a href='https://goo.gl/maps/pqJNUSHZLvjx8U6Q9' target="_blank">${item}</a>`)}
 
         </div>
       </div>

@@ -42,7 +42,6 @@ var categoriasImgs = [
   "https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2014/01/descripcion-categorias-wordpress.png?fit=666%2C370&quality=100&strip=all&ssl=1",
 ];
 var categorias;
-var comercios;
 
 // async function getdata () {
 //   let valores =   fetch('http://localhost:8080/ParcialTPI/tipocomercio')
@@ -300,7 +299,7 @@ function handlePageChange(page) {
 
 // categorias = await getdata();
 categorias = await cargarJSON("/src/js/tipocomercio.json");
-comercios = await cargarJSON("/src/js/comercio.json");
+
 
 
 renderCategorias(categorias, estado.nombreCategoria);
