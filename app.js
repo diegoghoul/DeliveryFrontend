@@ -135,9 +135,8 @@ function renderCategorias(categorias, id) {
     card.setAttribute("title", "Ver todas las categorias");
     card.setAttribute("id", "todas");
     card.addEventListener("click", (event) => {
-      setTimeout(() => {
         renderCategorias(categorias, "todas");
-      }, "500");
+
     });
 
     container.appendChild(card);
@@ -167,13 +166,15 @@ function renderComercios(nombreCategoria, idCategoria, page) {
   footer.innerHTML = ""; // Limpia el contenedor antes de renderizar los nuevos componentes
   //Encontrar los comercios que son de la categoria seleccionada
   var comerciosTotales = [];
-  comercios.forEach((comercio) => {
-    if (
-      comercio.comercioTipoComercioList[0].comercioTipoComercioPK
-        .idTipoComercio == idCategoria
-    ) {
-      comerciosTotales.push(comercio);
-    }
+  categorias.forEach((categoria) => {
+    categoria.comercioTipoComercioList.forEach((comercio)=>{
+      if (
+        comercio.comercioTipoComercioPK.idTipoComercio == idCategoria
+      ) {
+        comerciosTotales.push(comercio.comercio);
+      }
+    })
+    
   });
   comerciosTotales=comerciosTotales.sort((a, b) => a.nombre.localeCompare(b.nombre));
   //Manejar la paginacion
@@ -233,13 +234,19 @@ function renderProductos(nombreComercio, idComercio, page) {
   //Encontrar los comercios que son de la categoria seleccionada
   var productosTotales = [];
   var sucursales=[];
-  comercios.forEach((comercio) => {
-    if (comercio.idComercio == idComercio) {
-      productosTotales = comercio.productoComercioList;
-      for(var i=0;i<comercio.sucursalList.length;i++){
-        sucursales.push(comercio.sucursalList[i].nombre)
+  categorias.forEach((categoria) => {
+   
+    categoria.comercioTipoComercioList[0].comercio.productoComercioList.forEach((producto)=>{
+      if (producto.productoComercioPK.idComercio == idComercio) {
+        productosTotales.push(producto.producto)
+        
       }
+
+    })
+    for(var i=0;i<categoria.comercioTipoComercioList[0].comercio.sucursalList.length;i++){
+      sucursales.push(categoria.comercioTipoComercioList[0].comercio.sucursalList[i].nombre)
     }
+    
   });
   //Manejar la paginacion
   const startIndex = (page - 1) * cardsPerPage;
@@ -249,7 +256,7 @@ function renderProductos(nombreComercio, idComercio, page) {
   cardsToRender.forEach((productoCard) => {
 
     const card = new Card();
-    card.setAttribute("image", categoriasImgs[productoCard.index]);
+    card.setAttribute("image", categoriasImgs[1]);
     card.setAttribute("title", productoCard.nombre);
     card.setAttribute("id", productoCard.idProducto);
     container.appendChild(card);
@@ -289,7 +296,7 @@ function handlePageChange(page) {
 }
 
 // categorias = await getdata();
-categorias = await cargarJSON("http://localhost:8080/ParcialTPI/tipocomercio");
+categorias = await cargarJSON("/src/js/tipocomercio.json");
 comercios = await cargarJSON("/src/js/comercio.json");
 
 
