@@ -241,11 +241,14 @@ function renderProductos(nombreComercio, idComercio, page) {
         productosTotales.push(producto.producto)
         
       }
-
     })
-    for(var i=0;i<categoria.comercioTipoComercioList[0].comercio.sucursalList.length;i++){
-      sucursales.push(categoria.comercioTipoComercioList[0].comercio.sucursalList[i].nombre)
+    if (categoria.comercioTipoComercioList[0].comercio.idComercio == idComercio) {
+      for(var i=0;i<categoria.comercioTipoComercioList[0].comercio.sucursalList.length;i++){
+        sucursales.push(categoria.comercioTipoComercioList[0].comercio.sucursalList[i].nombre)
+      }
     }
+    
+    
     
   });
   //Manejar la paginacion
